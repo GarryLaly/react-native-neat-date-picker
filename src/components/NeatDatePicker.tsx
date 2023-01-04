@@ -336,7 +336,7 @@ const NeatDatePicker = ({
 
                     {/* last month */}
                     <TouchableOpacity style={styles.changeMonthTO} onPress={onPrev} disabled={btnDisabled} >
-                        <MDicon name={'chevron-left'} size={32} color={headerTextColor} />
+                        <MDicon name={'chevron-left'} size={24} color={headerTextColor} />
                     </TouchableOpacity>
 
                     {/* displayed year and month */}
@@ -349,7 +349,7 @@ const NeatDatePicker = ({
 
                     {/* next month */}
                     <TouchableOpacity style={styles.changeMonthTO} onPress={onNext} disabled={btnDisabled} >
-                        <MDicon name={'chevron-right'} size={32} color={headerTextColor} />
+                        <MDicon name={'chevron-right'} size={24} color={headerTextColor} />
                     </TouchableOpacity>
                 </View>
 
