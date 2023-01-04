@@ -6,7 +6,7 @@ import { getTranslation, i18nLanguages } from '../lib/lib'
 import { useState, useEffect } from 'react'
 import ChangeYearModal from './ChangeYearModal'
 import useDaysOfMonth, { DaysArray } from '../hooks/useDaysOfMonth'
-import MDicon from 'react-native-vector-icons/MaterialIcons'
+import MDicon from 'react-native-vector-icons/FontAwesome5Pro'
 import { StyleSheet, TouchableOpacity, View, Text, Dimensions, Platform, I18nManager, ColorValue, ViewStyle } from 'react-native'
 
 I18nManager.allowRTL(false)
@@ -336,7 +336,7 @@ const NeatDatePicker = ({
 
                     {/* last month */}
                     <TouchableOpacity style={styles.changeMonthTO} onPress={onPrev} disabled={btnDisabled} >
-                        <MDicon name={'keyboard-arrow-left'} size={32} color={headerTextColor} />
+                        <MDicon name={'chevron-left'} size={32} color={headerTextColor} />
                     </TouchableOpacity>
 
                     {/* displayed year and month */}
@@ -349,7 +349,7 @@ const NeatDatePicker = ({
 
                     {/* next month */}
                     <TouchableOpacity style={styles.changeMonthTO} onPress={onNext} disabled={btnDisabled} >
-                        <MDicon name={'keyboard-arrow-right'} size={32} color={headerTextColor} />
+                        <MDicon name={'chevron-right'} size={32} color={headerTextColor} />
                     </TouchableOpacity>
                 </View>
 
